@@ -1,0 +1,14 @@
+import pyautogui
+import time
+
+print("Clicking in 3 secs")
+time.sleep(3)
+print("Clicking now")
+while True:
+    try:
+        pyautogui.click()
+    except KeyboardInterrupt:
+        print("exited")
+        break
+
+
